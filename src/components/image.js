@@ -14,6 +14,7 @@ import Img from "gatsby-image"
  */
 
  // ! Generic pass in the image as a prop -- query wont take interpolation workaround needed 
+ // * Utilizing G-Node to create resolver might be the workaround
 const Image = () => {
   const data = useStaticQuery(graphql`
     query {
