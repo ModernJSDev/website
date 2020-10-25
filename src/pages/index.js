@@ -10,7 +10,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <p>Welcome to new ModernJSDev Podcast site.</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+      <Image image={"modernjsdevLogo.jpg"}/>
     </div>
     <Link to="/page-2/">Go to page 2</Link> <br />
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
