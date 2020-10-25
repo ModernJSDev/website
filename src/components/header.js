@@ -6,7 +6,7 @@ import Image from './image'
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: 'linear-gradient(to right, #fbff00 0%, #4d4700 100%)',
+      background: 'linear-gradient(to right, #f7971e, #ffd200)',
       marginBottom: `1.45rem`,
 
     }}
@@ -27,7 +27,6 @@ const Header = ({ siteTitle }) => (
             textDecoration: `none`,
           }}
         >
-          <Image/>
           {siteTitle}
         </Link>
       </h1>
