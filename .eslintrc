@@ -1,6 +1,6 @@
 {
-    "root": true,
     "parser": "babel-eslint",
+    "root": true,
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
@@ -28,22 +28,6 @@
             "fetch"
         ]
     },
-    "overrides": [
-        {
-            "files": [
-                "**/*.ts",
-                "**/*.tsx"
-            ],
-            "parser": "@typescript-eslint/parser",
-            "plugins": [
-                "@typescript-eslint",
-                "babel",
-                "react-hooks",
-                "prettier",
-                "testing-library"
-            ]
-        }
-    ],
     "rules": {
         "prettier/prettier": "error",
         "quotes": [

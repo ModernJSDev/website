@@ -23,10 +23,17 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
+            display: 'grid',
+
+    gridGap: 10,
+    gridTemplateColumns: 'repeat(auto-fill, minmax(200px,1fr))',
             color: `black`,
             textDecoration: `none`,
           }}
         >
+          <div style={{width: '5vw'}}>
+            <Image />
+          </div>
           {siteTitle}
         </Link>
       </h1>
