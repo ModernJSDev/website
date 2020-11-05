@@ -22,17 +22,25 @@ const Header = ({ siteTitle }) => (
           to="/"
           style={{
             display: `grid`,
-
             gridGap: 10,
-            gridTemplateColumns: `repeat(auto-fill, minmax(200px,1fr))`,
+            gridTemplateColumns: `[col] 100px [col] 100px [col] 100px [col] 100px`,
             color: `black`,
             textDecoration: `none`,
           }}
         >
-          <div style={{ width: `5vw` }}>
+          <div
+            style={{
+              width: `5vw`,
+              gridColumn: `col / span 1`,
+              gridRow: `row`,
+              placeSelf: `center`,
+            }}
+          >
             <Image />
           </div>
-          {siteTitle}
+          <div style={{ gridColumn: `col 2 / span 4`, gridRow: `row` }}>
+            {siteTitle}
+          </div>
         </Link>
       </h1>
     </div>
