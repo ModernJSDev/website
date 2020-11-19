@@ -23,11 +23,6 @@
         "jest": true,
         "es2020": true
     },
-    "settings": {
-        "polyfills": [
-            "fetch"
-        ]
-    },
     "rules": {
         "prettier/prettier": "error",
         "quotes": [
