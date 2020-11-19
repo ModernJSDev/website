@@ -31,21 +31,21 @@ const slideImages = [
 
 export default function Slideshow(props) {
   return (
-    <div className="slide-container">
+    <div className="slide-container" style={{ width: 100 }}>
       <Slide>
         <div className="each-slide">
-          <div style={{ backgroundImage: `url(${slideImages[0]})` }}>
-            <span>Slide 1</span>
+          <div>
+            <span>{slideImages[0]}</span>
           </div>
         </div>
         <div className="each-slide">
-          <div style={{ backgroundImage: `url(${slideImages[1]})` }}>
-            <span>Slide 2</span>
+          <div>
+            <span>{slideImages[1]}</span>
           </div>
         </div>
         <div className="each-slide">
-          <div style={{ backgroundImage: `url(${slideImages[2]})` }}>
-            <span>Slide 3</span>
+          <div>
+            <span>{slideImages[2]}</span>
           </div>
         </div>
       </Slide>
