@@ -24,10 +24,11 @@ module.exports = {
         background_color: `#fff44f`,
         theme_color: `#fff44f`,
         display: `minimal-ui`,
+        icon: `${__dirname}/src/images/modernjsdevLogo.jpg`,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
