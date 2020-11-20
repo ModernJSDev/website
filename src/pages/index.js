@@ -8,10 +8,8 @@ import ImageCarousel from "../components/ImageCarousel/ImageCarousel";
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <ImageCarousel />
     <p>Welcome to new ModernJSDev Podcast site.</p>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <ImageCarousel />
   </Layout>
 );
 

@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import React from "react";
 import Image from "./Image";
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle = `` }) => (
   <header
     style={{
       background: `linear-gradient(to right, #f7971e, #ffd200)`,
@@ -46,13 +46,5 @@ const Header = ({ siteTitle }) => (
     </div>
   </header>
 );
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-};
-
-Header.defaultProps = {
-  siteTitle: ``,
-};
 
 export default Header;
