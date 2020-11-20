@@ -1,8 +1,6 @@
 import React from "react";
-import { Slide } from "react-slideshow-image";
-import "react-slideshow-image/dist/styles.css";
 
-const slideImages = [
+export const slideImages = [
   <svg viewBox="0 0 128 128">
     <path
       fill="#31251C"
@@ -28,27 +26,3 @@ const slideImages = [
     </g>
   </svg>,
 ];
-
-export default function Slideshow(props) {
-  return (
-    <div className="slide-container" style={{ width: 100 }}>
-      <Slide>
-        <div className="each-slide">
-          <div>
-            <span>{slideImages[0]}</span>
-          </div>
-        </div>
-        <div className="each-slide">
-          <div>
-            <span>{slideImages[1]}</span>
-          </div>
-        </div>
-        <div className="each-slide">
-          <div>
-            <span>{slideImages[2]}</span>
-          </div>
-        </div>
-      </Slide>
-    </div>
-  );
-}
